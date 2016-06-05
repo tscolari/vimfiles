@@ -9,13 +9,16 @@ if has('persistent_undo')
 endif
 
 " We rely on bash for some things, make sure we use that for shelling out
-set shell=/bin/bash
+set shell=/bin/zsh
 " }}}
 
 " Backups {{{
-set swapfile                    " Keep swapfiles
-set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
-set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
+" set swapfile                    " Keep swapfiles
+" set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
+" set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
+set noswapfile
+set nobackup
+set nowb
 " }}}
 
 " UI {{{

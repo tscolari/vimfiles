@@ -122,3 +122,19 @@ map <leader>T :call RunNearestTest()<cr>
 
 map <leader><space> :Vipe <CR>
 map <leader>p :VipePop <CR>
+
+" Create window splits easier. The default
+" way is Ctrl-w,v and Ctrl-w,s. I remap
+" this to vv and ss
+nnoremap <silent> vv <C-w>v
+nnoremap <silent> ss <C-w>s
+
+" ============================
+" Shortcuts for everyday tasks
+" ============================
+
+"Clear current search highlight by double tapping //
+nmap <silent> // :nohlsearch<CR>
+
+" crlt+c to copy to system clipboard
+vmap <c-C> "*y
